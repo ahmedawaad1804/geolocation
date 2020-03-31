@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <!--
+  ArcGIS API for JavaScript, https://js.arcgis.com
+  For more information about the intro-graphics sample, read the original sample description at developers.arcgis.com.
+  https://developers.arcgis.com/javascript/latest/sample-code/intro-graphics/index.html
+  -->
+<title>Intro to graphics - 4.14</title>
+
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.14/esri/themes/light/main.css"
+    />
+    <script src="https://js.arcgis.com/4.14/"></script>
+
+    <style>
+      html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+
+    <script>
+        var pointsArray=[]
+      require(["esri/Map", "esri/views/MapView", "esri/Graphic"], function(
+        Map,
+        MapView,
+        Graphic
+      ) {
+        var map = new Map({
+          basemap: "hybrid"
+        });
+
+        var view = new MapView({
+          center: [30.032965, 31.336621],
+          container: "viewDiv",
+          map: map,
+          zoom: 3
+        });
+
+        /*************************
+         * Create a point graphic
+         *************************/
+
+        // First create a point geometry (this is the location of the Titanic)
+        
+        fetch('http://127.0.0.1:4000/')
+  .then(response => response.json())
+  .then(commits => {console.log(commits)
+  
+  for (let index = 0; index < commits.length; index++) {
+   
+  
+    var point = {
+          type: "point", // autocasts as new Point()
+          longitude: commits[index].secondpoint.longitude,
+          latitude: commits[index].secondpoint.latitude
+        };
+         // Create a symbol for drawing the point
+         var markerSymbol = {
+          type: "simple-marker", // autocasts as new SimpleMarkerSymbol()
+          color: "green",
+          outline: {
+            // autocasts as new SimpleLineSymbol()
+            color: [255, 255, 255],
+            width: 1
+          }
+        };
+
+        // Create a graphic and add the geometry and symbol to it
+        var pointGraphic = new Graphic({
+          geometry: point,
+          symbol: markerSymbol
+        });
+
+        pointsArray.push(pointGraphic)
+
+   };
+   
+   
+    console.log(pointsArray);
+    view.graphics.addMany(pointsArray);
+    
+    } );
+    
+        // Add the graphics to the view's graphics layer
+      
+      });
+    </script>
+    <script>
+     
+
+
+
+    </script>
+  </head>
+
+  <body>
+    <div id="viewDiv"></div>
+  </body>
+</html>

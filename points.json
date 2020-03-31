@@ -1,0 +1,108 @@
+[{
+    "id": 1,
+    "latitude": 30.038965,
+    "longitude": 31.338807,
+    "time":1,
+    "catagory":"N",
+    "subclass":0  
+},{
+    "id": 19,
+    "latitude": 30.038962,
+    "longitude": 31.338817,
+    "time":1,
+    "catagory":"N",
+    "subclass":0  
+},{
+    "id": 2,
+    "latitude": 30.038968,
+    "longitude": 31.335620,
+    "time":1,
+    "catagory":"N",
+    "subclass":0  
+},{
+    "id": 5,
+    "latitude": 30.032968,
+    "longitude": 31.336620,
+    "time":1,
+    "catagory":"A",
+    "subclass":0  
+},{
+    "id": 17,
+    "latitude": 30.032965,
+    "longitude": 31.336621,
+    "time":1,
+    "catagory":"N",
+    "subclass":0  
+},
+{
+    "id": 1,
+    "latitude": 30.038965,
+    "longitude": 31.338807,
+    "time":2,
+    "catagory":"N",
+    "subclass":0  
+},{
+    "id": 19,
+    "latitude": 30.038962,
+    "longitude": 31.338617,
+    "time":2,
+    "catagory":"N",
+    "subclass":0  
+},{
+    "id": 2,
+    "latitude": 30.038968,
+    "longitude": 31.335620,
+    "time":2,
+    "catagory":"N",
+    "subclass":0  
+},{
+    "id": 5,
+    "latitude": 30.032968,
+    "longitude": 31.336620,
+    "time":2,
+    "catagory":"A",
+    "subclass":0  
+},{
+    "id": 17,
+    "latitude": 30.038118,
+    "longitude": 31.348620,
+    "time":2,
+    "catagory":"N",
+    "subclass":0  
+},{
+    "id": 1,
+    "latitude": 30.038965,
+    "longitude": 31.338807,
+    "time":3,
+    "catagory":"N",
+    "subclass":0  
+},{
+    "id": 19,
+    "latitude": 30.038962,
+    "longitude": 31.338617,
+    "time":3,
+    "catagory":"N",
+    "subclass":0  
+},{
+    "id": 2,
+    "latitude": 30.038968,
+    "longitude": 31.335620,
+    "time":3,
+    "catagory":"N",
+    "subclass":0  
+},{
+    "id": 5,
+    "latitude": 30.032968,
+    "longitude": 31.336620,
+    "time":3,
+    "catagory":"A",
+    "subclass":0  
+},{
+    "id": 17,
+    "latitude": 30.032965,
+    "longitude": 31.336621,
+    "time":3,
+    "catagory":"N",
+    "subclass":0  
+}
+]
